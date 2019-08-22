@@ -5,12 +5,12 @@ from rest_framework.response import Response
 
 import os
 
-
 @api_view(['POST'])
 def requestlogger(request):
     try:
         networkrequest = request.data
-        data = """{networkrequest}\n""" .format(networkrequest=networkrequest)
+        data = """{networkrequest}\n\n""" .format(
+            networkrequest=networkrequest)
 
         with open('loggedinput.txt', 'a') as files:
             files.write(str(data))
