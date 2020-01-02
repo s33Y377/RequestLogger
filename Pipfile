@@ -9,7 +9,7 @@ bandit = "*"
 prospector = "*"
 
 [packages]
-django = "*"
+django = "==2.2.8"
 djangorestframework = "*"
 
 [requires]
